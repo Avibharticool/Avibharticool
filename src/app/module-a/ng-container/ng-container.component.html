@@ -1,0 +1,15 @@
+<div class="page-area col-md-6 m-auto ">
+    <h1 class="">Home</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni perferendis, iste qui at voluptas quisquam.</p>
+<button class="btn btn-primary m-2" (click)="onOpen()">Open</button>
+<button class="btn btn-primary m-2" (click)="onClose()">Close</button>
+    <ng-container *ngIf="status" class="products">
+        <div *ngFor="let pro of products">
+          <h3>
+            {{pro.name}}
+          </h3>
+        </div>
+
+      </ng-container>
+</div>

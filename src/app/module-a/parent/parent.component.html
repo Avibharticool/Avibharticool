@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12 m-4">
+            <div class="d-flex  flex-column align-items-center">
+                <h1>Product</h1>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum natus eligendi laborum at velit molestiae vel repudiandae aspernatur quos?<p>
+            </div>
+        </div>
+    </div>
+<ng-container *ngIf='done'>
+
+    <div class="row border border-success">
+        <div class="col-md-9 p-3">
+            <h3 class="text-center">You <span class="text-success"> {{product_name}} </span> is added in your cart</h3>
+        </div>
+        <div class="col-md-3 mt-3">
+            <button class="btn btn-success m-1">
+                Checkout
+            </button>
+            <button class="btn btn-danger m-1" (click)=
+            delete()>
+                Delete
+            </button>
+        </div>
+
+    </div>
+</ng-container>
+
+        <div class="row">
+            <div class="col-md-6">
+                <app-ng-card>
+                    <div class="card-header">Mobile</div>
+                    <a  class="btn btn-primary" (click)="addCart('Mobile')" >Buy Mobile</a>
+                </app-ng-card>
+            </div>
+            <div class="col-md-6">
+                <app-ng-card>
+                    <div class="card-header">Tv</div>
+                    <a class="btn btn-primary" (click)="addCart('Tv')">Buy Tv</a>
+                </app-ng-card>
+            </div>
+            <div class="col-md-6">
+                <app-ng-card>
+                    <div class="card-header">Car</div>
+                    <a  class="btn btn-primary" (click)="addCart('Car')">Buy Car</a>
+                </app-ng-card>
+            </div>
+            <div class="col-md-6">
+                <app-ng-card>
+                    <div class="card-header">Bike</div>
+                    <a  class="btn btn-primary" (click)="addCart('Bike')"> Buy Bike</a>
+                </app-ng-card>
+            </div>
+        </div>
+            <app-child [head1]='head1' [head2]='head2' [product_name]='product_name' (click)=check_box()  ></app-child>
+
+</div>
+<!-- 
+<h3>This is by for loop</h3>
+
+
+    <div *ngFor="let card of cards; index as i" >
+    <app-ng-card >
+        <div class="card-header">{{card}}</div>
+        <a class="btn btn-primary" (click)="addCart('{{card}}')" >Buy {{card}}</a>
+    </app-ng-card>
+   </div> -->
+
+
+

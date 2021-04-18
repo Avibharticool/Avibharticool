@@ -1,0 +1,38 @@
+
+<div class="row">
+    <div class="col-md-6">
+             
+            <div class="form-group">
+    
+              <input type="text" name="" class="form-control" id="exampleInputname1"  #uname >
+            </div>
+        
+            <button name="" class="btn btn-primary" (click)="addData(uname)">Submit</button>
+     
+    </div>
+
+
+<!-- This code is for <table></table> -->
+    <div class="col-md-6">
+        <div class="col-md-8 m-auto">
+        <table class="table m-3">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let user of users; index as i/first as i /last as i/odd as i/even as i" > -->
+              <tr *ngFor="let user of users; index as i" >
+                <!-- <th scope="row">{{i+'-'}}{{user.id}}</th>
+                <td>{{user.fname}}</td> -->
+                <td>{{i+1}}</td>
+                <td>{{user}}</td>
+             
+              </tr>
+            </tbody>
+          </table>
+    </div></div>
+</div>
+  

@@ -1,0 +1,22 @@
+<div class="col-md-8 m-auto">
+    <table class="table m-3">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+            <!-- <tr *ngFor="let user of users; index as i/first as i /last as i/odd as i/even as i" > -->
+          <tr *ngFor="let user of users; index as i" >
+            <th scope="row">{{i+'-'}}{{user.id}}</th>
+            <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+         
+          </tr>
+        </tbody>
+      </table>
+</div>
+  

@@ -1,0 +1,31 @@
+<div class="form-group p-4" (change)="getValue($event)">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1" >
+        <option>Laptop</option>
+        <option>Mobile</option>
+        <option>Car</option>
+        <option>Tv</option>
+
+    </select>
+</div>
+<span [ngSwitch]="selectproduct">
+    <p *ngSwitchCase="'Laptop'">
+        This is mobile
+
+    </p>
+    <p *ngSwitchCase="'Mobile'">
+        This is laptop
+
+    </p>
+    <p *ngSwitchCase="'Car'">
+        This is car
+
+    </p>
+    <p *ngSwitchCase="'Tv'">
+        This is tv
+
+    </p>
+    <p *ngSwitchDefault>
+        This is default
+    </p>
+</span>

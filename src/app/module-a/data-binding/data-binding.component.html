@@ -1,0 +1,28 @@
+<h1 class="text-center">Data Binding</h1>
+<div class="row">
+
+    <div class="col-md-6 border border-success p-4 ">
+        <h3>Property Binding</h3>
+        <input type="text" class="form-control" [value]="data2">
+        <button class="btn btn-success m-2 ">CLick</button>
+    </div>
+    <div class="col-md-6 border border-success p-4">
+        <h3>Interpolation</h3>
+        <input type="text" class="form-control" value="{{data1}}">
+        <button class="btn btn-success m-2 ">CLick</button>
+    </div>
+    <div class="col-md-6 border border-success p-4">
+        <h3>Two Way Binding</h3>
+        <input type="text" class="form-control " [(ngModel)]="data3">
+        <button class="btn btn-success m-2 " >CLick</button>
+    </div>
+    <div class="col-md-6 border border-success p-4">
+        <h3>Data Changes by two way binding</h3>
+        ==>> {{data3}}
+        
+      
+    </div>
+
+
+
+</div>

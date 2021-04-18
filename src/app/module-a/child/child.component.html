@@ -1,0 +1,10 @@
+<div class="col-md-12 bg-success text-white text-center py-4 ">
+    <h1 *ngIf="head1">Please select any product</h1>
+    <h1 *ngIf="head2">{{product_name}} is selected</h1>
+
+    <button class="btn btn-primary" [disabled]="!head2"   >Add To Cart</button>
+</div>
+
+
+
+ 
