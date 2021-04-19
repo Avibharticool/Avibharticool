@@ -60,19 +60,22 @@ export class NavComponent implements OnInit {
     name:'Grandparent', icon:'fa fa-users', routerLink:'grandparent'
 },
 {
-  name:'Property-Binding', icon:'fa fa-users', routerLink:'property-binding'
+  name:'ProBinding', icon:'fa fa-users', routerLink:'property-binding'
 },
 {
-  name:'Template Reference', icon:'fa fa-users', routerLink:'temp-refer'
+  name:'Temp-refer', icon:'fa fa-users', routerLink:'temp-refer'
 },
 {
-  name:'Event Binding', icon:'fa fa-users', routerLink:'event-binding'
+  name:'EventBinding', icon:'fa fa-users', routerLink:'event-binding'
 },
 {
-  name:'ng Container', icon:'fa fa-users', routerLink:'ng-container'
+  name:'ngContainer', icon:'fa fa-users', routerLink:'ng-container'
 },
 {
-  name:'Data Binding', icon:'fa fa-users', routerLink:'databinding'
+  name:'DataBinding', icon:'fa fa-users', routerLink:'databinding'
+},
+{
+  name:'Life-cycle', icon:'fa fa-users', routerLink:'lifecycle'
 },
 ]
 

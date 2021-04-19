@@ -8,6 +8,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { GrandparentComponent } from './grandparent/grandparent.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LifeChildComponent } from './life-child/life-child.component';
+import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
 import { ModuleAComponent } from './module-a.component';
 import { NavComponent } from './nav/nav.component';
 import { NgCardComponent } from './ng-card/ng-card.component';
@@ -45,6 +47,10 @@ const routes: Routes = [
     {path:'ng-container',component:NgContainerComponent },
     {path:'databinding',component:DataBindingComponent },
     {path:'nav',component:NavComponent},
+    {path:'lifecycle',component:LifeCycleHookComponent},
+    {path:'lifechild',component:LifeChildComponent},
+
+
     {path:'**',component:PageNotFoundComponent }
 
 

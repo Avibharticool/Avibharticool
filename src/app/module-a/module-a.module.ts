@@ -25,6 +25,8 @@ import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavComponent } from './nav/nav.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
+import { LifeChildComponent } from './life-child/life-child.component';
 
 
 @NgModule({
@@ -50,7 +52,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     DataBindingComponent,
     PageNotFoundComponent,
     NavComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LifeCycleHookComponent,
+    LifeChildComponent
   ],
   imports: [
     CommonModule,
